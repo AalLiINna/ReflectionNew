@@ -1,9 +1,20 @@
 package p1;
 
+import java.lang.reflect.Constructor;
+
 public class User {
-    private String name ="Albir";
+    private String name;
     private String surname;
     private int age;
+
+
+    User(){}
+
+    User(String name, String surname, int age){
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+    }
 
     private String getName() {
         return name;
@@ -28,14 +39,5 @@ public class User {
     private String getSurname(){
         return surname;
     }
-
-    User(){}
-
-    private User(String name, String surname, int age){
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-    }
-
 
 }
